@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1507491867126-9039a78caae3') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slide-in 1s ease-in-out;
+}
+
+/* Header Section */
+header {
+    padding: 20px;
+    background: rgba(0, 60, 110, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #f9f9f9;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #dfe6e9;
+}
+
+.contact-info p a {
+    text-decoration: none;
+    color: #81ecec;
+}
+
+.contact-info p a:hover {
+    color: #00cec9;
+}
+
+/* Section Styling */
+.resume-section {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    background: rgba(250, 250, 250, 0.8);
+}
+
+.resume-section h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-section ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.resume-section ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 60, 110, 0.9);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
